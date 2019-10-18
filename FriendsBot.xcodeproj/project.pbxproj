@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B20F235A7E3B002216CD /* AppDelegate.swift */; };
-		1764B212235A7E3B002216CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B211235A7E3B002216CD /* SceneDelegate.swift */; };
-		1764B214235A7E3B002216CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B213235A7E3B002216CD /* ViewController.swift */; };
-		1764B217235A7E3B002216CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1764B215235A7E3B002216CD /* Main.storyboard */; };
 		1764B219235A7E3C002216CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1764B218235A7E3C002216CD /* Assets.xcassets */; };
 		1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */; };
 		1764B227235A7E3C002216CD /* FriendsBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B226235A7E3C002216CD /* FriendsBotTests.swift */; };
+		3905A5EB86294DCE6C699DE0 /* Pods_FriendsBot_FriendsBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71805FBC46B56E9EBB18AFA6 /* Pods_FriendsBot_FriendsBotTests.framework */; };
+		73BF203E4DF749D0508BD4CF /* Pods_FriendsBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6652E8692244248C4923F681 /* Pods_FriendsBot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +28,18 @@
 /* Begin PBXFileReference section */
 		1764B20C235A7E3B002216CD /* FriendsBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B20F235A7E3B002216CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1764B211235A7E3B002216CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1764B213235A7E3B002216CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1764B216235A7E3B002216CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1764B218235A7E3C002216CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1764B21B235A7E3C002216CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1764B21D235A7E3C002216CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1764B222235A7E3C002216CD /* FriendsBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B226235A7E3C002216CD /* FriendsBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsBotTests.swift; sourceTree = "<group>"; };
 		1764B228235A7E3C002216CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; path = "Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C33FA91D88F20E55FF1DFC3 /* Pods-FriendsBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot.release.xcconfig"; path = "Target Support Files/Pods-FriendsBot/Pods-FriendsBot.release.xcconfig"; sourceTree = "<group>"; };
+		3475C6CD097130A9F5C5583D /* Pods-FriendsBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot.debug.xcconfig"; path = "Target Support Files/Pods-FriendsBot/Pods-FriendsBot.debug.xcconfig"; sourceTree = "<group>"; };
+		480643AF78A5DB4A89A798A5 /* Pods-FriendsBot-FriendsBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot-FriendsBotTests.release.xcconfig"; path = "Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests.release.xcconfig"; sourceTree = "<group>"; };
+		6652E8692244248C4923F681 /* Pods_FriendsBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71805FBC46B56E9EBB18AFA6 /* Pods_FriendsBot_FriendsBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsBot_FriendsBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BF203E4DF749D0508BD4CF /* Pods_FriendsBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3905A5EB86294DCE6C699DE0 /* Pods_FriendsBot_FriendsBotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,8 @@
 				1764B20E235A7E3B002216CD /* FriendsBot */,
 				1764B225235A7E3C002216CD /* FriendsBotTests */,
 				1764B20D235A7E3B002216CD /* Products */,
+				C96B8E14AC5B5574270D958C /* Pods */,
+				771549429203D9EC05414D3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				1764B20F235A7E3B002216CD /* AppDelegate.swift */,
-				1764B211235A7E3B002216CD /* SceneDelegate.swift */,
-				1764B213235A7E3B002216CD /* ViewController.swift */,
-				1764B215235A7E3B002216CD /* Main.storyboard */,
 				1764B218235A7E3C002216CD /* Assets.xcassets */,
 				1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */,
 				1764B21D235A7E3C002216CD /* Info.plist */,
@@ -99,6 +102,27 @@
 			path = FriendsBotTests;
 			sourceTree = "<group>";
 		};
+		771549429203D9EC05414D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6652E8692244248C4923F681 /* Pods_FriendsBot.framework */,
+				71805FBC46B56E9EBB18AFA6 /* Pods_FriendsBot_FriendsBotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96B8E14AC5B5574270D958C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3475C6CD097130A9F5C5583D /* Pods-FriendsBot.debug.xcconfig */,
+				2C33FA91D88F20E55FF1DFC3 /* Pods-FriendsBot.release.xcconfig */,
+				1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */,
+				480643AF78A5DB4A89A798A5 /* Pods-FriendsBot-FriendsBotTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1764B22B235A7E3C002216CD /* Build configuration list for PBXNativeTarget "FriendsBot" */;
 			buildPhases = (
+				C67E0A40BF3871B6A9CE3C60 /* [CP] Check Pods Manifest.lock */,
 				1764B208235A7E3B002216CD /* Sources */,
 				1764B209235A7E3B002216CD /* Frameworks */,
 				1764B20A235A7E3B002216CD /* Resources */,
+				FB7C64C40A3CF24C78A1CE1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1764B22E235A7E3C002216CD /* Build configuration list for PBXNativeTarget "FriendsBotTests" */;
 			buildPhases = (
+				21752CAF3C1BDA496756EF27 /* [CP] Check Pods Manifest.lock */,
 				1764B21E235A7E3C002216CD /* Sources */,
 				1764B21F235A7E3C002216CD /* Frameworks */,
 				1764B220235A7E3C002216CD /* Resources */,
+				FA89B7DF87AB6F2F88A80FFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +210,6 @@
 			files = (
 				1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */,
 				1764B219235A7E3C002216CD /* Assets.xcassets in Resources */,
-				1764B217235A7E3B002216CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +222,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21752CAF3C1BDA496756EF27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendsBot-FriendsBotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67E0A40BF3871B6A9CE3C60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FriendsBot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA89B7DF87AB6F2F88A80FFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7C64C40A3CF24C78A1CE1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendsBot/Pods-FriendsBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FriendsBot/Pods-FriendsBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FriendsBot/Pods-FriendsBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1764B208235A7E3B002216CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1764B214235A7E3B002216CD /* ViewController.swift in Sources */,
 				1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */,
-				1764B212235A7E3B002216CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +331,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1764B215235A7E3B002216CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1764B216235A7E3B002216CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +458,7 @@
 		};
 		1764B22C235A7E3C002216CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3475C6CD097130A9F5C5583D /* Pods-FriendsBot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +478,7 @@
 		};
 		1764B22D235A7E3C002216CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C33FA91D88F20E55FF1DFC3 /* Pods-FriendsBot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +498,7 @@
 		};
 		1764B22F235A7E3C002216CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -420,6 +521,7 @@
 		};
 		1764B230235A7E3C002216CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480643AF78A5DB4A89A798A5 /* Pods-FriendsBot-FriendsBotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
