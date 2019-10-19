@@ -10,14 +10,14 @@ import Foundation
 import RxSwift
 
 protocol ChatServiceProtocol {
-    func sendMessage(_ message: String) -> Single<String>
+    func sendMessage(_ message: String) -> Single<ChatNewMessage>
 }
 
 final class ChatService: ChatServiceProtocol {
     
     private let appService = AppService()
     
-    func sendMessage(_ message: String) -> Single<String> {
+    func sendMessage(_ message: String) -> Single<ChatNewMessage> {
         let parameters: [String: Any] = ["message": message]
         
         return appService.request(path: .chat, method: .POST, parameters: parameters).asSingle()

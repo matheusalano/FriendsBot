@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1721FE98235AC69E00B081CD /* ChatMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721FE96235AC69E00B081CD /* ChatMessage+CoreDataClass.swift */; };
+		1721FE99235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721FE97235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift */; };
 		173A0D6F235A8294003F20BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0D6E235A8294003F20BA /* AppCoordinator.swift */; };
 		173A0D71235A829C003F20BA /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0D70235A829C003F20BA /* AppService.swift */; };
 		173A0D74235A82F9003F20BA /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173A0D73235A82F9003F20BA /* Colours.xcassets */; };
@@ -16,10 +18,14 @@
 		173C8445235AA99600A4D1B7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8444235AA99600A4D1B7 /* ChatViewController.swift */; };
 		173C8447235AAAE200A4D1B7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */; };
 		173C8449235AAB0000A4D1B7 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8448235AAB0000A4D1B7 /* ChatService.swift */; };
+		173C847D235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 173C847B235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld */; };
 		1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B20F235A7E3B002216CD /* AppDelegate.swift */; };
 		1764B219235A7E3C002216CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1764B218235A7E3C002216CD /* Assets.xcassets */; };
 		1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */; };
 		1764B227235A7E3C002216CD /* FriendsBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B226235A7E3C002216CD /* FriendsBotTests.swift */; };
+		17C27CFF235B881A0059BC7A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */; };
+		17DF6C93235B89E50097D389 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C92235B89E50097D389 /* ChatModel.swift */; };
+		17DF6C95235B91250097D389 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C94235B91250097D389 /* ChatTableViewCell.swift */; };
 		3905A5EB86294DCE6C699DE0 /* Pods_FriendsBot_FriendsBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71805FBC46B56E9EBB18AFA6 /* Pods_FriendsBot_FriendsBotTests.framework */; };
 		73BF203E4DF749D0508BD4CF /* Pods_FriendsBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6652E8692244248C4923F681 /* Pods_FriendsBot.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1721FE96235AC69E00B081CD /* ChatMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChatMessage+CoreDataClass.swift"; path = "FriendsBot/Scenes/Chat/Model/ChatMessage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1721FE97235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ChatMessage+CoreDataProperties.swift"; path = "FriendsBot/Scenes/Chat/Model/ChatMessage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		173A0D6E235A8294003F20BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		173A0D70235A829C003F20BA /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		173A0D73235A82F9003F20BA /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 		173C8444235AA99600A4D1B7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		173C8448235AAB0000A4D1B7 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		173C847C235AB1D000A4D1B7 /* FriendsBot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsBot.xcdatamodel; sourceTree = "<group>"; };
 		1764B20C235A7E3B002216CD /* FriendsBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B20F235A7E3B002216CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1764B218235A7E3C002216CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +63,9 @@
 		1764B222235A7E3C002216CD /* FriendsBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B226235A7E3C002216CD /* FriendsBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsBotTests.swift; sourceTree = "<group>"; };
 		1764B228235A7E3C002216CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		17DF6C92235B89E50097D389 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		17DF6C94235B91250097D389 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; path = "Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C33FA91D88F20E55FF1DFC3 /* Pods-FriendsBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot.release.xcconfig"; path = "Target Support Files/Pods-FriendsBot/Pods-FriendsBot.release.xcconfig"; sourceTree = "<group>"; };
 		3475C6CD097130A9F5C5583D /* Pods-FriendsBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot.debug.xcconfig"; path = "Target Support Files/Pods-FriendsBot/Pods-FriendsBot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +112,7 @@
 				1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */,
 				1764B21D235A7E3C002216CD /* Info.plist */,
 				173A0D7B235A83AE003F20BA /* Localizable.strings */,
+				173C847B235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -116,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				173A0D7F235A84C2003F20BA /* BaseCoordinator.swift */,
+				17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,10 +145,12 @@
 		173C8441235AA97500A4D1B7 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				17C27D00235B89220059BC7A /* Model */,
 				173C8442235AA98500A4D1B7 /* ChatCoordinator.swift */,
 				173C8444235AA99600A4D1B7 /* ChatViewController.swift */,
 				173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */,
 				173C8448235AAB0000A4D1B7 /* ChatService.swift */,
+				17DF6C94235B91250097D389 /* ChatTableViewCell.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -177,6 +193,16 @@
 				1764B228235A7E3C002216CD /* Info.plist */,
 			);
 			path = FriendsBotTests;
+			sourceTree = "<group>";
+		};
+		17C27D00235B89220059BC7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1721FE96235AC69E00B081CD /* ChatMessage+CoreDataClass.swift */,
+				1721FE97235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift */,
+				17DF6C92235B89E50097D389 /* ChatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		771549429203D9EC05414D3A /* Frameworks */ = {
@@ -391,9 +417,15 @@
 				173C8447235AAAE200A4D1B7 /* ChatViewModel.swift in Sources */,
 				173C8443235AA98500A4D1B7 /* ChatCoordinator.swift in Sources */,
 				173A0D71235A829C003F20BA /* AppService.swift in Sources */,
+				17C27CFF235B881A0059BC7A /* ActivityIndicator.swift in Sources */,
 				1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */,
+				1721FE99235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift in Sources */,
+				1721FE98235AC69E00B081CD /* ChatMessage+CoreDataClass.swift in Sources */,
 				173C8449235AAB0000A4D1B7 /* ChatService.swift in Sources */,
 				173C8445235AA99600A4D1B7 /* ChatViewController.swift in Sources */,
+				173C847D235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld in Sources */,
+				17DF6C95235B91250097D389 /* ChatTableViewCell.swift in Sources */,
+				17DF6C93235B89E50097D389 /* ChatModel.swift in Sources */,
 				173A0D80235A84C2003F20BA /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HT566FM6J;
 				INFOPLIST_FILE = "$(SRCROOT)/FriendsBot/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +614,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HT566FM6J;
 				INFOPLIST_FILE = "$(SRCROOT)/FriendsBot/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,6 +703,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		173C847B235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				173C847C235AB1D000A4D1B7 /* FriendsBot.xcdatamodel */,
+			);
+			currentVersion = 173C847C235AB1D000A4D1B7 /* FriendsBot.xcdatamodel */;
+			path = FriendsBot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1764B204235A7E3A002216CD /* Project object */;
 }

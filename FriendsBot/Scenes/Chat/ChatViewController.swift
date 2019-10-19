@@ -7,10 +7,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxDataSources
 
 class ChatViewController: UIViewController {
 
     private let viewModel: ChatViewModel
+    private let disposeBag = DisposeBag()
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 32
+        tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
+        tableView.register(ChatTableViewCell.self, forCellReuseIdentifier: ChatTableViewCell.description())
+        return tableView
+    }()
     
     init(viewModel: ChatViewModel) {
         
@@ -24,4 +37,51 @@ class ChatViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        super.loadView()
+        
+        view.backgroundColor = .white
+        
+        addSubviews()
+        installConstraints()
+        setupBindings()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        viewModel.loadMessages.onNext(())
+    }
+    
+    private func addSubviews() {
+        
+        view.addSubview(tableView)
+    }
+        
+    private func installConstraints() {
+        
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+            
+    private func setupBindings() {
+        
+        viewModel.messages
+            .bind(to: tableView.rx.items(dataSource: getTableDataSource()))
+            .disposed(by: disposeBag)
+    }
+    
+    private func getTableDataSource() -> RxTableViewSectionedReloadDataSource<SectionModel<Date, ChatMessage>> {
+        return RxTableViewSectionedReloadDataSource<SectionModel<Date, ChatMessage>>(
+            configureCell: { (_, tableView, indexPath, element) in
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: ChatTableViewCell.description(), for: indexPath) as? ChatTableViewCell else {
+                    return UITableViewCell()
+                }
+                
+                cell.configure(message: element)
+                return cell
+            }
+        )
+    }
 }

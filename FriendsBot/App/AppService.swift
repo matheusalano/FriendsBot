@@ -34,7 +34,7 @@ class AppService {
     }
     
     func request<T: Decodable>(path: APIPaths, method: HTTPMethod, parameters: [String: Any]? = nil) -> Observable<T> {
-        let stringURL = baseUrl + "/\(path.rawValue)"
+        let stringURL = baseUrl + "\(path.rawValue)"
         
         guard let url = URL(string: stringURL) else { return Observable.error(ServiceError.invalidURL) }
         var urlRequest = URLRequest(url: url)
@@ -50,16 +50,38 @@ class AppService {
         
         urlRequest.httpMethod = method.rawValue
         
+        print("\n###### 🛫🛫🛫 REQUEST: \(stringURL) ######\n")
+        print("###### METHOD: \(method.rawValue) ######")
+        print("###### HEADERS ######\n")
+        print("\(urlRequest.allHTTPHeaderFields ?? [:])\n")
+        if method == .POST {
+            
+            if  let data = urlRequest.httpBody,
+                let body = String(data: data, encoding: String.Encoding.utf8) {
+                print("###### BODY ######\n")
+                print(body)
+            }
+        }
+        
         return session.rx
             .json(request: urlRequest)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap({ json throws -> Observable<T> in
                 do {
-                    let jsonData = try JSONDecoder().decode(T.self, from: JSONSerialization.data(withJSONObject: json, options: .prettyPrinted))
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .secondsSince1970
+                    let jsonData = try decoder.decode(T.self, from: JSONSerialization.data(withJSONObject: json, options: .prettyPrinted))
+                    
+                    print(" ### 🛬🛬🛬 FINISHING \(method.rawValue) REQUEST ###")
+                    print("###### BODY ######")
+                    print(json)
                     
                     return Observable.just(jsonData)
                 } catch let error {
+                    print(" ### 🛬💥💥 ERROR ON \(method.rawValue) REQUEST ###")
                     print(error.localizedDescription)
+                    print("###### BODY ######")
+                    print(json)
                     return Observable.error(ServiceError.cannotParse)
                 }
             })
