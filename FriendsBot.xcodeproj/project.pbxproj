@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173A0D6F235A8294003F20BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0D6E235A8294003F20BA /* AppCoordinator.swift */; };
+		173A0D71235A829C003F20BA /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0D70235A829C003F20BA /* AppService.swift */; };
+		173A0D74235A82F9003F20BA /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173A0D73235A82F9003F20BA /* Colours.xcassets */; };
+		173A0D79235A83AE003F20BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 173A0D7B235A83AE003F20BA /* Localizable.strings */; };
+		173A0D80235A84C2003F20BA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A0D7F235A84C2003F20BA /* BaseCoordinator.swift */; };
+		173C8443235AA98500A4D1B7 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8442235AA98500A4D1B7 /* ChatCoordinator.swift */; };
+		173C8445235AA99600A4D1B7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8444235AA99600A4D1B7 /* ChatViewController.swift */; };
+		173C8447235AAAE200A4D1B7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */; };
+		173C8449235AAB0000A4D1B7 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C8448235AAB0000A4D1B7 /* ChatService.swift */; };
 		1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B20F235A7E3B002216CD /* AppDelegate.swift */; };
 		1764B219235A7E3C002216CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1764B218235A7E3C002216CD /* Assets.xcassets */; };
 		1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */; };
@@ -26,6 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173A0D6E235A8294003F20BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		173A0D70235A829C003F20BA /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		173A0D73235A82F9003F20BA /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		173A0D78235A83A2003F20BA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		173A0D7A235A83AE003F20BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		173A0D7C235A83B1003F20BA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		173A0D7F235A84C2003F20BA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		173C8442235AA98500A4D1B7 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
+		173C8444235AA99600A4D1B7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		173C8448235AAB0000A4D1B7 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		1764B20C235A7E3B002216CD /* FriendsBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B20F235A7E3B002216CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1764B218235A7E3C002216CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +82,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		173A0D6D235A8285003F20BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1764B20F235A7E3B002216CD /* AppDelegate.swift */,
+				173A0D6E235A8294003F20BA /* AppCoordinator.swift */,
+				173A0D70235A829C003F20BA /* AppService.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		173A0D72235A82B2003F20BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1764B218235A7E3C002216CD /* Assets.xcassets */,
+				173A0D73235A82F9003F20BA /* Colours.xcassets */,
+				1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */,
+				1764B21D235A7E3C002216CD /* Info.plist */,
+				173A0D7B235A83AE003F20BA /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		173A0D7D235A849C003F20BA /* General */ = {
+			isa = PBXGroup;
+			children = (
+				173A0D7E235A84AB003F20BA /* Components */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		173A0D7E235A84AB003F20BA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				173A0D7F235A84C2003F20BA /* BaseCoordinator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		173A0D81235A84FC003F20BA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				173C8441235AA97500A4D1B7 /* Chat */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		173C8441235AA97500A4D1B7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				173C8442235AA98500A4D1B7 /* ChatCoordinator.swift */,
+				173C8444235AA99600A4D1B7 /* ChatViewController.swift */,
+				173C8446235AAAE200A4D1B7 /* ChatViewModel.swift */,
+				173C8448235AAB0000A4D1B7 /* ChatService.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		1764B203235A7E3A002216CD = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +162,10 @@
 		1764B20E235A7E3B002216CD /* FriendsBot */ = {
 			isa = PBXGroup;
 			children = (
-				1764B20F235A7E3B002216CD /* AppDelegate.swift */,
-				1764B218235A7E3C002216CD /* Assets.xcassets */,
-				1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */,
-				1764B21D235A7E3C002216CD /* Info.plist */,
+				173A0D6D235A8285003F20BA /* App */,
+				173A0D7D235A849C003F20BA /* General */,
+				173A0D81235A84FC003F20BA /* Scenes */,
+				173A0D72235A82B2003F20BA /* Resources */,
 			);
 			path = FriendsBot;
 			sourceTree = "<group>";
@@ -119,7 +196,6 @@
 				1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */,
 				480643AF78A5DB4A89A798A5 /* Pods-FriendsBot-FriendsBotTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,6 +267,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 1764B203235A7E3A002216CD;
 			productRefGroup = 1764B20D235A7E3B002216CD /* Products */;
@@ -209,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */,
+				173A0D79235A83AE003F20BA /* Localizable.strings in Resources */,
+				173A0D74235A82F9003F20BA /* Colours.xcassets in Resources */,
 				1764B219235A7E3C002216CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173A0D6F235A8294003F20BA /* AppCoordinator.swift in Sources */,
+				173C8447235AAAE200A4D1B7 /* ChatViewModel.swift in Sources */,
+				173C8443235AA98500A4D1B7 /* ChatCoordinator.swift in Sources */,
+				173A0D71235A829C003F20BA /* AppService.swift in Sources */,
 				1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */,
+				173C8449235AAB0000A4D1B7 /* ChatService.swift in Sources */,
+				173C8445235AA99600A4D1B7 /* ChatViewController.swift in Sources */,
+				173A0D80235A84C2003F20BA /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +417,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		173A0D7B235A83AE003F20BA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				173A0D7A235A83AE003F20BA /* en */,
+				173A0D7C235A83B1003F20BA /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1764B21B235A7E3C002216CD /* Base */,
+				173A0D78235A83A2003F20BA /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -346,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -406,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -463,7 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HT566FM6J;
-				INFOPLIST_FILE = FriendsBot/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FriendsBot/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,7 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HT566FM6J;
-				INFOPLIST_FILE = FriendsBot/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FriendsBot/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

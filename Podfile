@@ -6,7 +6,7 @@ target 'FriendsBot' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
-
+  pod 'SnapKit'
 
   target 'FriendsBotTests' do
     pod 'RxTest'
