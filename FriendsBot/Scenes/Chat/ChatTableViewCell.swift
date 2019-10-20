@@ -17,6 +17,10 @@ class ChatTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        messageLabel.numberOfLines = 0
+        messageLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        messageLabel.adjustsFontForContentSizeCategory = true
+
         bubbleImageView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         selectionStyle = .none
         
@@ -29,11 +33,11 @@ class ChatTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func installConstraints(_ fromUser: Bool) {
+    private func installConstraints(_ fromUser: Bool, isFirstCell: Bool, isLastCell: Bool) {
         bubbleImageView.snp.remakeConstraints {
             $0.width.greaterThanOrEqualTo(42)
-            $0.top.equalToSuperview().inset(4)
-            $0.bottom.equalToSuperview().inset(4)
+            $0.top.equalToSuperview().inset(isFirstCell ? 16 : 4)
+            $0.bottom.equalToSuperview().inset(isLastCell ? 16 : 4)
             
             if fromUser {
                 $0.leading.greaterThanOrEqualToSuperview().inset(64)
@@ -49,8 +53,8 @@ class ChatTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(message: ChatMessage) {
-        installConstraints(message.fromUser)
+    func configure(message: ChatMessage, isFirstCell: Bool, isLastCell: Bool) {
+        installConstraints(message.fromUser, isFirstCell: isFirstCell, isLastCell: isLastCell)
         
         let image = UIImage(named: message.fromUser ? "chat_bubble_sent" : "chat_bubble_received")
         

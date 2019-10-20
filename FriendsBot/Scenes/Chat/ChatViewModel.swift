@@ -58,11 +58,13 @@ final class ChatViewModel {
                     let entity = NSEntityDescription.entity(forEntityName: "ChatMessage", in: managedContext) else { return }
 
                 let message = ChatMessage(entity: entity, insertInto: managedContext)
+                message.identity = UUID()
                 message.text = newMessage.message
                 message.date = newMessage.messageDate
                 message.fromUser = true
                 
                 let response = ChatMessage(entity: entity, insertInto: managedContext)
+                response.identity = UUID()
                 response.text = newMessage.response
                 response.date = newMessage.responseDate
                 response.fromUser = false
@@ -84,14 +86,13 @@ final class ChatViewModel {
                 
                     let calendar = Calendar.current
                 
-                    let groupedMessages = Dictionary(grouping: messages) { message -> DateComponents in
-                        guard let msgDate = message.date else { return DateComponents() }
-                        return calendar.dateComponents([.day, .year, .month], from: msgDate)
-                    }
+                    let groupedMessages = Dictionary(grouping: messages) { message in
+                        return calendar.startOfDay(for: message.date)
+                    }.sorted(by: { ($0.0) < ($1.0) })
                     
                     let sectionedMessages: [SectionModel<Date, ChatMessage>] = groupedMessages.map { group in
-                        let sortedMsgs = group.value.sorted(by: { ($0.date ?? Date()) < ($1.date ?? Date()) })
-                        return SectionModel(model: group.key.date ?? Date(), items: sortedMsgs)
+                        let sortedMsgs = group.value.sorted(by: { $0.date < $1.date })
+                        return SectionModel(model: group.key, items: sortedMsgs)
                     }
                 
                     return Observable.just(sectionedMessages)

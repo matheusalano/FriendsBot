@@ -23,6 +23,8 @@
 		1764B219235A7E3C002216CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1764B218235A7E3C002216CD /* Assets.xcassets */; };
 		1764B21C235A7E3C002216CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */; };
 		1764B227235A7E3C002216CD /* FriendsBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764B226235A7E3C002216CD /* FriendsBotTests.swift */; };
+		17A25B3B235C11C0004B82BB /* ChatTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A25B3A235C11C0004B82BB /* ChatTextFieldView.swift */; };
+		17A25B3D235C3729004B82BB /* FriendsFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A25B3C235C3729004B82BB /* FriendsFont.ttf */; };
 		17C27CFF235B881A0059BC7A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */; };
 		17DF6C93235B89E50097D389 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C92235B89E50097D389 /* ChatModel.swift */; };
 		17DF6C95235B91250097D389 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C94235B91250097D389 /* ChatTableViewCell.swift */; };
@@ -63,6 +65,8 @@
 		1764B222235A7E3C002216CD /* FriendsBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1764B226235A7E3C002216CD /* FriendsBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsBotTests.swift; sourceTree = "<group>"; };
 		1764B228235A7E3C002216CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A25B3A235C11C0004B82BB /* ChatTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextFieldView.swift; sourceTree = "<group>"; };
+		17A25B3C235C3729004B82BB /* FriendsFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FriendsFont.ttf; sourceTree = "<group>"; };
 		17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		17DF6C92235B89E50097D389 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		17DF6C94235B91250097D389 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		173A0D72235A82B2003F20BA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17A25B3C235C3729004B82BB /* FriendsFont.ttf */,
 				1764B218235A7E3C002216CD /* Assets.xcassets */,
 				173A0D73235A82F9003F20BA /* Colours.xcassets */,
 				1764B21A235A7E3C002216CD /* LaunchScreen.storyboard */,
@@ -130,6 +135,7 @@
 			children = (
 				173A0D7F235A84C2003F20BA /* BaseCoordinator.swift */,
 				17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */,
+				17A25B3A235C11C0004B82BB /* ChatTextFieldView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				173A0D79235A83AE003F20BA /* Localizable.strings in Resources */,
 				173A0D74235A82F9003F20BA /* Colours.xcassets in Resources */,
 				1764B219235A7E3C002216CD /* Assets.xcassets in Resources */,
+				17A25B3D235C3729004B82BB /* FriendsFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +423,7 @@
 				173A0D6F235A8294003F20BA /* AppCoordinator.swift in Sources */,
 				173C8447235AAAE200A4D1B7 /* ChatViewModel.swift in Sources */,
 				173C8443235AA98500A4D1B7 /* ChatCoordinator.swift in Sources */,
+				17A25B3B235C11C0004B82BB /* ChatTextFieldView.swift in Sources */,
 				173A0D71235A829C003F20BA /* AppService.swift in Sources */,
 				17C27CFF235B881A0059BC7A /* ActivityIndicator.swift in Sources */,
 				1764B210235A7E3B002216CD /* AppDelegate.swift in Sources */,

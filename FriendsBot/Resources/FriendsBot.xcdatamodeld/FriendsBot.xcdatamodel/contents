@@ -3,9 +3,10 @@
     <entity name="ChatMessage" representedClassName="ChatMessage" syncable="YES">
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="fromUser" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="identity" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="text" attributeType="String" minValueString="2"/>
     </entity>
     <elements>
-        <element name="ChatMessage" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="ChatMessage" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

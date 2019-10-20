@@ -9,6 +9,7 @@
 
 import Foundation
 import CoreData
+import RxDataSources
 
 
 extension ChatMessage {
@@ -17,8 +18,13 @@ extension ChatMessage {
         return NSFetchRequest<ChatMessage>(entityName: "ChatMessage")
     }
 
-    @NSManaged public var date: Date?
+    @NSManaged public var identity: UUID
+    @NSManaged public var date: Date
     @NSManaged public var fromUser: Bool
     @NSManaged public var text: String?
 
+}
+
+extension ChatMessage: IdentifiableType {
+    public typealias Identity = UUID
 }
