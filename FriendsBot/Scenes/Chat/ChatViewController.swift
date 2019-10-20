@@ -152,6 +152,8 @@ class ChatViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteChatMessages))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.label
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.titleTextAttributes =
             [NSAttributedString.Key.foregroundColor: UIColor.label,
@@ -185,6 +187,16 @@ class ChatViewController: UIViewController {
             tableView.setContentOffset(.init(x: 0, y: CGFloat.greatestFiniteMagnitude), animated: true)
             tableView.reloadData()
         }
+    }
+    
+    @objc private func deleteChatMessages() {
+        let alert = UIAlertController(title: "Clear messages", message: "Are you sure you want to delete all your messages?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { [weak self] _ in
+            self?.viewModel.clearMessages.onNext(())
+        }))
+        
+        present(alert, animated: true)
     }
     
     @objc private func keyboardDidShow(notification: Notification) {

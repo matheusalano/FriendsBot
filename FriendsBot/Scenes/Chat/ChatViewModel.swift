@@ -21,6 +21,7 @@ final class ChatViewModel {
     //MARK: - Inputs
     let sendMessage: AnyObserver<String>
     let loadMessages: AnyObserver<Void>
+    let clearMessages: AnyObserver<Void>
     
     //MARK: - Outputs
     let messages: Observable<[SectionModel<Date, ChatMessage>]>
@@ -34,6 +35,9 @@ final class ChatViewModel {
         
         let _loadMessages = PublishSubject<Void>()
         loadMessages = _loadMessages.asObserver()
+        
+        let _clearMessages = PublishSubject<Void>()
+        clearMessages = _clearMessages.asObserver()
         
         let _error = PublishSubject<Error>()
         errorPublisher = _error.asObservable()
@@ -77,7 +81,15 @@ final class ChatViewModel {
             })
             .map({ _ in () })
         
-        messages = Observable.merge(_loadMessages.asObservable(), newMessage)
+        let clearMessagesObs = _clearMessages.asObservable()
+            .do(onNext: { _ in
+                guard let managedContext = ChatViewModel.managedContext else { return }
+                let fetchRequest: NSFetchRequest<NSFetchRequestResult> = ChatMessage.fetchRequest()
+                let request = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                _ = try managedContext.execute(request)
+            })
+        
+        messages = Observable.merge(_loadMessages.asObservable(), newMessage, clearMessagesObs)
             .flatMap({ _ -> Observable<[SectionModel<Date, ChatMessage>]> in
                 guard let managedContext = ChatViewModel.managedContext else { return Observable.empty() }
                 
