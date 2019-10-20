@@ -5,3 +5,11 @@
   Created by Matheus Alano on 18/10/19.
   Copyright © 2019 Matheus Alano. All rights reserved.
 */
+
+"text_message" = "Mensagem";
+"error" = "Erro";
+"chat_error_message" = "Não conseguimos estabelecer uma conexão com o bot. Por favor, tente novamente mais tarde.";
+"ok" = "OK";
+"cancel" = "Cancelar";
+"clear_messages_title" = "Limpar mensagens";
+"clear_messages_body" = "Tem certeza que deseja excluir todas as suas mensagens?";

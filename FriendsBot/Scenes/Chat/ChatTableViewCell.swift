@@ -21,7 +21,7 @@ class ChatTableViewCell: UITableViewCell {
         messageLabel.font = UIFont.preferredFont(forTextStyle: .body)
         messageLabel.adjustsFontForContentSizeCategory = true
 
-        bubbleImageView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        bubbleImageView.setContentCompressionResistancePriority(.init(rawValue: 100), for: .horizontal)
         selectionStyle = .none
         
         addSubview(bubbleImageView)

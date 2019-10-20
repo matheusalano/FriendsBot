@@ -27,7 +27,7 @@ class ChatViewController: UIViewController {
         return tableView
     }()
     
-    private let chatTextFieldView = ChatTextFieldView(placeholder: "Text Message")
+    private let chatTextFieldView = ChatTextFieldView(placeholder: String.localized(by: "text_message"))
     
     private var textField: UITextField {
         return chatTextFieldView.textField
@@ -39,7 +39,7 @@ class ChatViewController: UIViewController {
         
         super.init(nibName: nil, bundle: nil)
         
-        title = "F.r.i.e.n.d.s b.o.t"
+        title = "F.R.I.E.N.D.S B.O.T"
     }
     
     @available(*, unavailable)
@@ -124,12 +124,18 @@ class ChatViewController: UIViewController {
         
         viewModel.isLoading
             .bind(to: chatTextFieldView.sendButton.rx.isHidden)
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
         
         viewModel.isLoading
             .map({ !$0 })
             .bind(to: textField.rx.isUserInteractionEnabled)
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
+        
+        viewModel.errorPublisher
+            .subscribe(onNext: { [weak self] _ in
+                self?.showErrorAlert()
+            })
+            .disposed(by: disposeBag)
         
         chatTextFieldView.sendButton.rx.tap
             .throttle(.milliseconds(5000), scheduler: MainScheduler.asyncInstance)
@@ -137,8 +143,8 @@ class ChatViewController: UIViewController {
             .bind(to: viewModel.sendMessage)
             .disposed(by: disposeBag)
         
-        textField.rx.text
-            .map({ $0?.isEmpty == false })
+        textField.rx.text.orEmpty
+            .map({ $0.count >= 2 })
             .bind(to: chatTextFieldView.sendButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
@@ -189,10 +195,17 @@ class ChatViewController: UIViewController {
         }
     }
     
+    private func showErrorAlert() {
+        let alert = UIAlertController(title: String.localized(by: "error"), message: String.localized(by: "chat_error_message"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: String.localized(by: "ok"), style: .default, handler: nil))
+        
+        present(alert, animated: true)
+    }
+    
     @objc private func deleteChatMessages() {
-        let alert = UIAlertController(title: "Clear messages", message: "Are you sure you want to delete all your messages?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { [weak self] _ in
+        let alert = UIAlertController(title: String.localized(by: "clear_messages_title"), message: String.localized(by: "clear_messages_body"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: String.localized(by: "cancel"), style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: String.localized(by: "ok"), style: .destructive, handler: { [weak self] _ in
             self?.viewModel.clearMessages.onNext(())
         }))
         

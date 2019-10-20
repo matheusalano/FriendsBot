@@ -26,6 +26,7 @@
 		17A25B3B235C11C0004B82BB /* ChatTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A25B3A235C11C0004B82BB /* ChatTextFieldView.swift */; };
 		17A25B3D235C3729004B82BB /* FriendsFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A25B3C235C3729004B82BB /* FriendsFont.ttf */; };
 		17C27CFF235B881A0059BC7A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */; };
+		17CEAA85235D245D009D7249 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAA84235D245D009D7249 /* String+Localized.swift */; };
 		17DF6C93235B89E50097D389 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C92235B89E50097D389 /* ChatModel.swift */; };
 		17DF6C95235B91250097D389 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF6C94235B91250097D389 /* ChatTableViewCell.swift */; };
 		3905A5EB86294DCE6C699DE0 /* Pods_FriendsBot_FriendsBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71805FBC46B56E9EBB18AFA6 /* Pods_FriendsBot_FriendsBotTests.framework */; };
@@ -68,6 +69,7 @@
 		17A25B3A235C11C0004B82BB /* ChatTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextFieldView.swift; sourceTree = "<group>"; };
 		17A25B3C235C3729004B82BB /* FriendsFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FriendsFont.ttf; sourceTree = "<group>"; };
 		17C27CFE235B881A0059BC7A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		17CEAA84235D245D009D7249 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		17DF6C92235B89E50097D389 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		17DF6C94235B91250097D389 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		1DEDA4C80D65E8D5D1E067BD /* Pods-FriendsBot-FriendsBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; path = "Target Support Files/Pods-FriendsBot-FriendsBotTests/Pods-FriendsBot-FriendsBotTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		173A0D7D235A849C003F20BA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				17CEAA83235D2450009D7249 /* Extensions */,
 				173A0D7E235A84AB003F20BA /* Components */,
 			);
 			path = General;
@@ -209,6 +212,14 @@
 				17DF6C92235B89E50097D389 /* ChatModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		17CEAA83235D2450009D7249 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17CEAA84235D245D009D7249 /* String+Localized.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		771549429203D9EC05414D3A /* Frameworks */ = {
@@ -430,6 +441,7 @@
 				1721FE99235AC69E00B081CD /* ChatMessage+CoreDataProperties.swift in Sources */,
 				1721FE98235AC69E00B081CD /* ChatMessage+CoreDataClass.swift in Sources */,
 				173C8449235AAB0000A4D1B7 /* ChatService.swift in Sources */,
+				17CEAA85235D245D009D7249 /* String+Localized.swift in Sources */,
 				173C8445235AA99600A4D1B7 /* ChatViewController.swift in Sources */,
 				173C847D235AB1D000A4D1B7 /* FriendsBot.xcdatamodeld in Sources */,
 				17DF6C95235B91250097D389 /* ChatTableViewCell.swift in Sources */,

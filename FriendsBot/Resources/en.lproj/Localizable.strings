@@ -5,3 +5,11 @@
   Created by Matheus Alano on 18/10/19.
   Copyright © 2019 Matheus Alano. All rights reserved.
 */
+
+"text_message" = "Text Message";
+"error" = "Error";
+"chat_error_message" = "We couldn't establish a connection with the bot. Please try again later.";
+"ok" = "OK";
+"cancel" = "Cancel";
+"clear_messages_title" = "Clear messages";
+"clear_messages_body" = "Are you sure you want to delete all your messages?";
