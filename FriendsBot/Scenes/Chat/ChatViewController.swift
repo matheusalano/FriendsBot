@@ -140,11 +140,12 @@ class ChatViewController: UIViewController {
         chatTextFieldView.sendButton.rx.tap
             .throttle(.milliseconds(5000), scheduler: MainScheduler.asyncInstance)
             .withLatestFrom(textField.rx.text.orEmpty)
+            .map({ $0.trimmingCharacters(in: .whitespaces) })
             .bind(to: viewModel.sendMessage)
             .disposed(by: disposeBag)
         
         textField.rx.text.orEmpty
-            .map({ $0.count >= 2 })
+            .map({ $0.trimmingCharacters(in: .whitespaces).count >= 2 })
             .bind(to: chatTextFieldView.sendButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
